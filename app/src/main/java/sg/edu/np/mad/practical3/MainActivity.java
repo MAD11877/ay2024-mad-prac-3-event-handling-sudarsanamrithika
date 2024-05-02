@@ -1,5 +1,6 @@
 package sg.edu.np.mad.practical3;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -37,7 +38,12 @@ public class MainActivity extends AppCompatActivity {
         Button btnFollow = findViewById(R.id.button);
 
 //        // Get the TextViews with the User's name, description and default button message
-        tvName.setText(user.name);
+        Intent receivingId = getIntent();
+        int userID = receivingId.getIntExtra("id",-1);
+        //concatenating user.name and userID
+        String username = String.format("%1$s %2$06d",user.name,userID);
+
+        tvName.setText(username);
         tvDescription.setText(user.description);
         btnFollow.setText("FOLLOW");
 

@@ -40,7 +40,7 @@ public class ListActivity extends AppCompatActivity {
         builder.setPositiveButton("View", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                int id = new Random().nextInt(999999);
+                int id = new Random().nextInt(999999);   //generating int before sending to MainActivity.java
                 Intent MainActivity = new Intent(ListActivity.this, MainActivity.class);
                 MainActivity.putExtra("id",id);
                 startActivity(MainActivity);
