@@ -28,6 +28,7 @@ public class ListActivity extends AppCompatActivity {
             return insets;
         });
 
+        // save me
         ImageView imageProfile = findViewById(R.id.foreground);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Profile");
