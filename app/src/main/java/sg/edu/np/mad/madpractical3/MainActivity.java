@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import sg.edu.np.mad.practical3.R;
+
 public class MainActivity extends AppCompatActivity {
 
 
